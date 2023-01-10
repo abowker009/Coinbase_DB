@@ -8,7 +8,7 @@ base_currency= ["USD"]
 coinbase_interval= "ONE_MINUTE" #ONE_MINUTE,FIVE_MINUTE, FIFTEEN_MINUTE,THIRTY_MINUTE,ONE_HOUR,TWO_HOUR,SIX_HOUR,ONE_DAY
 
 
-
+#IGNORE everything below this for you to play with to get your timedelta math right for the final run.
 
 # Get UTC time for the beginning of January 1, 2019
 start_date = datetime(year=2022, month=12, day=8, hour=0, minute=0, second=0, microsecond=0)
