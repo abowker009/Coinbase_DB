@@ -9,7 +9,7 @@ IMPORTANT: in each file dir="" I have a seperate drive for my DB which is in dri
 Go to product list and put your product that you would like to get data for. For the first time as an example and see if everything     works make product_list = ["BTC","ETH] and base_currency= ["USD"] (make sure to capitalize every letter) Dont worry if every pair has all of the base_currency in them as the program will figure this out itself.
  
 3. Open coinbase_setup.py: 
-Now we need to set up the Database and grab the first dates of your tickers. Currently there is not an easy way of grabbing the first dates of each pair so I decided to grab the third day of every month starting in 2019. You can change the start dates and end dates in coinbase_setup.py if you want but since markets have changed dramatically since 2020 I decided dates before 2019 would not be helpfull. DO NOT STOP IT BEFORE ITS DONE. 
+Now we need to set up the Database and grab the first dates of your tickers. Currently there is not an easy way of grabbing the first dates of each pair so I decided to grab the third day of every month starting in 2019. You can change the start dates and end dates in coinbase_setup.py if you want but since markets have changed dramatically since 2020 I decided dates before 2019 would not be helpfull. DO NOT STOP IT BEFORE IT IS DONE. 
 
 4. Open coinbase_firstohlc.py: 
 Now that we have the "somewhat" first dates of each pair we need to delete all of the other data we got from the API. Just run this file as it is just a script. 
