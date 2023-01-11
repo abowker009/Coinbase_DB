@@ -6,7 +6,7 @@ IMPORTANT: in each file dir="" I have a seperate drive for my DB which is in dri
 1. You need to create an API key from Coinbase. Before creation make sure your API version is updated to the most current one (FYI make    sure you are on Chrome for creation as Safari will not work) . For example I used a pair I will never trade and these are the permissions I allowed wallet: accounts: read; wallet: notifications: read; wallet: user:read. After creation put both the key and secret in its respective place in not_secrets.py.
 
 2. Open update_crypto_db.py: 
-Go to product list and put your product that you would like to get data for. For the first time as an example and see if everything     works make product_list = ["BTC","ETH] and base_currency= ["USD"] (make sure to capitalize every letter) Dont worry if every pair has all of the base_currency in them as the program will figure this out itself.
+Go to product list and put your product that you would like to get data for. For the first time as an example and see if everything     works make product_list = ["BTC","ETH"] and base_currency= ["USD"] (make sure to capitalize every letter) Do not worry if every pair has all of the base_currency in them as the program will figure this out itself.
  
 3. Open coinbase_setup.py: 
 Now we need to set up the Database and grab the first dates of your tickers. Currently there is not an easy way of grabbing the first dates of each pair so I decided to grab the third day of every month starting in 2019. You can change the start dates and end dates in coinbase_setup.py if you want but since markets have changed dramatically since 2020 I decided dates before 2019 would not be helpfull. DO NOT STOP IT BEFORE IT IS DONE. 
